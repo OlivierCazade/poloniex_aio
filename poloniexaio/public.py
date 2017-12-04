@@ -17,7 +17,7 @@ def returnTicker():
 
 
 @public_request
-def return24Volume():
+def return24hVolume():
     pass
 
 
