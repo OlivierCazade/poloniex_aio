@@ -32,7 +32,7 @@ def returnTradeHistory(*, currencyPair, start=None, end=None):
 
 
 @public_request
-def returnChartData(*, currencyPair, start, end):
+def returnChartData(*, currencyPair, start, end, period):
     pass
 
 
