@@ -1,4 +1,4 @@
-from poloniexaio import public
+from poloniex_aio import public
 import aiohttp
 import pytest
 
