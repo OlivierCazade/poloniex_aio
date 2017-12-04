@@ -2,8 +2,4 @@ language: python
 python:
   - "3.5"
   - "3.6"
-  # PyPy versions
-  - "pypy3" # Pypy3 2.4.0
-  - "pypy-5.3.1"
-# command to run tests
 script: python3 -m pytest -x
