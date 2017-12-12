@@ -6,7 +6,7 @@ An async library for `Poloniex api <https://poloniex.com/support/api/>`_
 This library is still exerimental.
 
 .. image:: https://api.travis-ci.org/OlivierCazade/poloniex_aio.svg?branch=master
-	   :target: https://api.travis-ci.org/OlivierCazade/poloniex_aio
+	   :target: https://travis-ci.org/OlivierCazade/poloniex_aio
 
 Usage
 -----
