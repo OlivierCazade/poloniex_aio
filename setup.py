@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='poloniex_aio',
-    version='0.1.0b5',
+    version='0.1.0b6',
     url='https://github.com/OlivierCazade/poloniex_aio',
     author='Olivier Cazade',
     author_email='olivier.cazade@gmail.com',
