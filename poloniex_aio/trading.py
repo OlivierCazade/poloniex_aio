@@ -2,9 +2,11 @@ import hmac
 import time
 import urllib
 import hashlib
+from functools import wraps
 
 
 def trading_request(func):
+        @wraps(func)
         async def async_request(session, api_key, secret_key, *args, **kwargs):
             data = {
                 'nonce': int(time.time()*1000),

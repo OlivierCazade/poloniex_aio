@@ -1,4 +1,8 @@
+from functools import wraps
+
+
 def public_request(func):
+        @wraps(func)
         async def async_request(session, *args, **kwargs):
             func(*args, **kwargs)
             params = {
@@ -9,7 +13,6 @@ def public_request(func):
                                    params=params) as resp:
                 return await resp.json()
         return async_request
-
 
 @public_request
 def returnTicker():
