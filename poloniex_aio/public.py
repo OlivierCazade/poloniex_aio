@@ -28,6 +28,9 @@ def public_request(func):
 def returnTicker():
     """
     Returns the ticker for all markets.
+
+    :param session:  Aiohttp client session object
+
     """
     pass
 
@@ -37,6 +40,9 @@ def return24hVolume():
     """
     Returns the 24-hour volume for all markets,
     plus totals for primary currencies.
+
+    :param session:  Aiohttp client session object
+
     """
     pass
 
@@ -47,6 +53,8 @@ def returnOrderBook(*, currencyPair):
     Returns the order book for a given market,
     as well as a sequence number for use with the Push API and an indicator
     specifying whether the market is frozen.
+
+    :param session:  Aiohttp client session object
 
     :param String currencyPair:  Market identifier, example : BTC_ETH
 
@@ -60,6 +68,8 @@ def returnTradeHistory(*, currencyPair, start=None, end=None):
     Returns the past 200 trades for a given market, or up to 50,000 trades
     between a range specified in UNIX timestamps by the "start" and "end"
     parameters.
+
+    :param session:  Aiohttp client session object
 
     :param String currencyPair:  Market identifier, example : BTC_ETH
 
@@ -79,6 +89,8 @@ def returnTradeHistory(*, currencyPair, start=None, end=None):
 def returnChartData(*, currencyPair, start, end, period):
     """
     Returns candlestick chart data.
+
+    :param session:  Aiohttp client session object
 
     :param String currencyPair:  Market identifier, example : BTC_ETH
 
@@ -101,6 +113,9 @@ def returnChartData(*, currencyPair, start, end, period):
 @public_request
 def returnCurrencies():
     """
+
+    :param session:  Aiohttp client session object
+
     Returns information about currencies.
     """
     pass
@@ -111,6 +126,8 @@ def returnLoanOrders(*, currency):
     """
     Returns the list of loan offers and demands for a given currency,
     specified by the "currency" GET parameter.
+
+    :param session:  Aiohttp client session object
 
     :param String currency:  Currency identifier, example : BTC
 
