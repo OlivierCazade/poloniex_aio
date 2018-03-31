@@ -8,8 +8,21 @@ This library is still exerimental.
 .. image:: https://api.travis-ci.org/OlivierCazade/poloniex_aio.svg?branch=master
 	   :target: https://travis-ci.org/OlivierCazade/poloniex_aio
 
+
+Install
+-------
+
+A pip package is available.
+
+.. code:: python
+
+   pip3 install poloniex-aio
+
+
 Usage
 -----
+
+Full documentation available at `readthedocs <https://poloniex-aio.readthedocs.io/en/stable/>`_
 
 .. code:: python
 
