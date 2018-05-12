@@ -9,6 +9,7 @@ import time
 import urllib
 import hashlib
 from functools import wraps
+from .utils.Bucket import poloniex_bucket
 
 
 def trading_request(func):
@@ -28,6 +29,7 @@ def trading_request(func):
                 'Sign': sign,
                 'Key': api_key
             }
+            await poloniex_bucket.get_token()
             async with session.post('https://poloniex.com/tradingApi',
                                     data=data,
                                     headers=headers) as resp:

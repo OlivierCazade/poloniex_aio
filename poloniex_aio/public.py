@@ -8,6 +8,7 @@ IP being banned.
 """
 
 from functools import wraps
+from .utils.Bucket import poloniex_bucket
 
 
 def public_request(func):
@@ -18,6 +19,7 @@ def public_request(func):
                 'command': func.__name__
                 }
             params.update(kwargs)
+            await poloniex_bucket.get_token()
             async with session.get('https://poloniex.com/public',
                                    params=params) as resp:
                 return await resp.json()

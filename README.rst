@@ -1,7 +1,7 @@
 Poloniex-aio
 =================================
 
-An async library for `Poloniex api <https://poloniex.com/support/api/>`_
+An async library for `Poloniex api <https://poloniex.com/support/api/>`_ with builtin requests rate control.
 
 This library is still exerimental.
 
