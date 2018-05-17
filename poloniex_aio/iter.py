@@ -1,4 +1,4 @@
-from poloniex_aio.public import returnTradeHistory
+from .public import returnTradeHistory
 import time
 
 
@@ -13,7 +13,7 @@ async def tradeHistory(session, currencyPair, start, end):
                                        end=end + 3600)
 
         for trade in res:
-            if last_id != -1 and last_id <= trade["globalTradeID"]:
+            if last_id == -1 or last_id <= trade["globalTradeID"]:
                 # This function assume Ids values always increase
                 dup_found = True
                 continue
