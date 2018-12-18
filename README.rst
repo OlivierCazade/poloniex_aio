@@ -3,7 +3,7 @@ Poloniex-aio
 
 An async library for `Poloniex api <https://poloniex.com/support/api/>`_ with builtin requests rate control.
 
-This library is still exerimental.
+This library is still experimental.
 
 .. image:: https://api.travis-ci.org/OlivierCazade/poloniex_aio.svg?branch=master
 	   :target: https://travis-ci.org/OlivierCazade/poloniex_aio
